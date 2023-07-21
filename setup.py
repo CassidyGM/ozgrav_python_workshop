@@ -33,8 +33,9 @@ setup(
     # Scripts that will be run on the command line
     entry_points={
         'console_scripts': [
-            # Make a hello_world command that runs the main function in hello_world.py script located in my_package/scripts
             'hello_world=my_package.scripts.hello_world:main',
+            # Above is test script and below is new script that must be added
+            'filter_and_plot=my_package.scripts.filter_and_plot:main',
         ],
     },
 )
